@@ -31,13 +31,14 @@ enum Directon
 
     Directon dir;
     Position position;
+    Area area;
     public:
     void Input();
-    void Setup(Area& area) ;
-    void Logic (Area& area) ;
-    void Draw (Area& area) ;
-    void Name (Area& area) ;
-    void EndGameScore (Area& area) ;
+    void Setup() ;
+    void Logic() ;
+    void Draw() ;
+    void Name () ;
+    void EndGameScore() ;
 
 
 

@@ -30,15 +30,15 @@ public:
     Area area;
     static void gotoxy (short x, short y);
     void PrintMenu();
-    void PrintEndGameText(Area& area);
+    void PrintEndGameText();
     void ActionKey(Menu::Choice choice, Area& area, Menu& menu,Snake& snake);
     void HandlePlayOption(Area& area, Snake& snake);
-    void HandleOptions(Area& area);
+    void HandleOptions();
     void HandleEndGame(Area& area, Menu& menu);
     void HandleArrowKeys(Menu &menu, Area& area, Snake& snake);
     void HandleMenuLoop(Menu& menu,Area& area, Snake& snake);
     void ResetMenu();
-    void DisplayMenu(Area& area);
+    void DisplayMenu();
     void HandleMenu(Menu& menu, Area& area, Snake& snake);
 
 };

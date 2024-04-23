@@ -34,7 +34,7 @@ void Snake::Input()
  }
 }
 
-void Snake::Setup(Area& area)
+void Snake::Setup()
 {
      gameOver = false;
      dir = STOP;
@@ -45,7 +45,7 @@ void Snake::Setup(Area& area)
      score = 0;
 }
 
-void Snake::Logic(Area& area)
+void Snake::Logic()
 {
 
     tailX.resize(maxTailLength, 0);
@@ -119,7 +119,7 @@ void Snake::Logic(Area& area)
     }
 }
 
-void Snake::Draw(Area& area)
+void Snake::Draw()
 {
     system("cls");
 
@@ -173,7 +173,7 @@ void Snake::Draw(Area& area)
     std::cout << ", aby zakonczyc gre.";
 }
 
-void Snake::Name(Area& area)
+void Snake::Name()
 {
     COORD pos = {12,4};
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
@@ -184,7 +184,7 @@ void Snake::Name(Area& area)
     area.CleanScreenCompletely();
 }
 
-void Snake::EndGameScore(Area& area)
+void Snake::EndGameScore()
 
 {
     Menu::gotoxy(24,2);
